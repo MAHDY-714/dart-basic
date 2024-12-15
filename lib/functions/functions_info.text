@@ -1,0 +1,71 @@
+basic functions{
+  *_ functions:- It is a set of programming tasks that are written in one place and called in several different places in the program : 
+     إنها مجموعة من المهام البرمجيه التي تيم كتابتها في مكان واحد و استدعائها في عدة اماكن مختلفه في البرنامج  
+                     *-________________________________________________-*
+  *_ void functions:- It is a function that does not return a value, meaning that when this function is executed, it does not return any value and is not stored anywhere, but it can be used to execute commands that do not require storing values : 
+     هي داله لا تقوم بإرجاع قيمه أي أنها عندما تنفّذ هذه الداله لا ترجع أي قيمه ولا تخزن في أي مكان بل من ممكن أن تستخدمها لتنفيذ أوامر لا تتطلب تخزين قيم   
+                     *-________________________________________________-*     
+    *_ void nameFunctions()
+    *- {
+    *- code tasks;
+    *- }:-
+}
+=========================================================================
+returned statements functions{
+      
+   *_ functions:- It is a set of programming tasks that are written in one place and called in several different places in the program :
+=>     إنها مجموعة من المهام البرمجيه التي تيم كتابتها في مكان واحد و استدعائها في عدة اماكن مختلفه في البرنامج  
+                     *-________________________________________________-*
+    *_ return statements functions :- It is a function that returns values, meaning that when this function is executed, it returns a value and can be stored anywhere in the code : 
+=>    هي داله تقوم بإرجاع قيم أي أنها عندما تنفّذ هذه الدال تقوم بإرجاع قيمه و يمكن تخزينها في أي مكان في الكود
+                     *-________________________________________________-*
+    *_ date type nameFunctions()
+    *- {
+    *- code tasks;
+    *- }:-
+
+    *_note => Parameters vs arguments:- {
+       * Parameters:- is variables in functions
+       * arguments:- is value given variables in functions
+    *-}
+  
+}
+
+========================================================================
+Parameters{
+          *_ Parameters vs arguments:- {
+       * 1- Parameters:- is variables in functions
+       * 2- arguments:- is value given variables in functions
+    *-}
+
+    *_ parameters :- They are variables created specifically for the function to receive values ​​from outside the function to inside the function to perform the operations required by the function and are defined in the function's round brackets : 
+    
+          وهي متغيرات تم إنشاؤها خصيصًا للدالة لاستقبال القيم من خارج الدالة إلى داخل الدالة لإجراء العمليات المطلوبة من الدالة ويتم تعريفها بين قوسي الدالة الدائريين
+!    *_ Types of parameters:-{
+          * 1- Positional parameters:- These are mandatory parameters and their values ​​must be added when calling the function in order. If you do not remember their values, you may put the value of another parameter in their place, which will cause incorrect results : 
+            هي مُعْلِمَاتْ تكون اجباريه و يجب اضافة قيمها عند استدعاء الداله بالترتيب فعدم تذكرك لقيمها فإنك قد تضع قيمة معامله أخري مكانها و سوف يسبب ذالك نتائج خاطها
+    *______________________*    
+        * 2- Optional parameters:-  They are the same as using (positional parameters), but they differ in 3 things :-{
+            ?1- When writing all optional parameters, you must define them within the square brackets inside the round brackets as well : 
+          عند كتابت كل المُعْلِمَاتْ الأختياريه يجب عليك تعريفها خلال القوسين المربعان بداخل القوسين المستديران أيضاً 
+          !_____________________!
+            ?2- The last field is placed in the circular brackets : 
+            يوضع يكتبو أخر أخر حقل في القوسين الدائريان
+          !_____________________!
+            ?3- A default value can be assigned to them during the declaration phase and this value is taken if no values ​​are passed to them when called : 
+            يمكن تعيين قيمه افتراضيه لها أثناء مرحله الإعلان و تأخذ هذه القيمه  في حالة عدم تمرير لها قيم عند الإستدعاء 
+                 *- }
+        *_ 3- Named Parameters:-  It is a parameter that is characterized by each parameter being called by its name and also not in order. As soon as you write the name of the parameter, you give it its value. There are two types of it : 
+        هي  معامل تتميز بأن كل معامله تسدعي بإسمها وأيضاً عدم ترتيب فبمجرد كتابه اسم المعامله تعطيها قيمتها و يوجد منها نوعان         
+      *-Types Named Parameters:- {
+          ?1- Mandatory parameters: - These are parameters that are called as soon as the function is called and a value must be added to them. They are distinguished when defined in the function by the keyword (required).
+           ? !note (required) is used to indicate to the function that
+                   هي مُعْلِمَاتْ تستدعي بمجرد استدعاء الدله ويجب إضافة لها قيمه و تتكيز عند تعريفها في الداله بالكلمة المفتاحيه (required) 
+ملحوظه (required) هي تسخدم لتشير للداله أن هذا المُعْلم هو إلزامي   this parameter is mandatory
+          !_____________________!
+          ?2- Parameter list: - It is any parameter that you can add of any type you need and assign a default value to it during the declaration phase and take this value in the event that no value is passed to it when call   
+                  هي قائمة بأي مُعْلِمات يمكنك إضافتها من أي نوع تحت قائمة المُعْلِمَاتْ:- هي أي معامله يمكن أن تضيفها من أي نوع تحتاجه و تعيين لها قيمه إفتراضيه أثناء مرحلة الإعلان و تأخذ هذه القيمه في حالة عدم تمرير لها قيمه عند الإستدعاء  
+          !_____________________!
+!      -}
+    *_ }
+}
