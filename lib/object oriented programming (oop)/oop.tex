@@ -1,0 +1,114 @@
+Q1_ what is oop?=> 
+هي نموزج برمجي له مبادئ و أساليب محدده كالتصنيف والتوريث وتعدد الأشكالو التغليف يعتمد علي فكرة تمثيل الكائنات علي هيئة كود و يمكن القول أنه طريقه لتنظيم تفكير المبرمجين في كتابه الأكواد و تنظيم و تصميم البرامج مما يجعلها أكثر مرونة و قابله للتوسع وللتعديل  و الصيانه
+    Q1_Key points=> {
+    Programming paradigm:- An organized way of writing programs.
+    Object-based: Represents everything in a program as an object with properties and behaviors.
+        Uses specific principles: classification, inheritance, polymorphism, and encapsulation.
+    Aims to: organize code, increase flexibility, facilitate maintenance, and reduce errors.
+    } 
+    Q1_Steps to create a (OOP) as an idea ? => {
+        Step 1: تحديد الفصيل
+            تحديد نوع الكائن الذي سوف يتم تمثيله في البرامج مثال الإنسان
+                        
+        Step 2: تحديد الخصائص و السمات
+            تحديد الخصائص و السمات الخاصه بالكائن مثال الاسم و العمر و الجنس و لون البشره والطول و الوزن و غيرها من الخصائص و السمات
+    }
+                     Q1<==========================================>end=>
+
+Q2_ Steps to create (OOP) code => {
+    Step 1: (نوع الكائن)تحديد الفصيله
+         class NameClass{
+             dataType? attributeName1;
+             dataType? attributeName2;
+             dataType? methodName(dataType parameterName){//code;}
+         }
+   
+       Step 2:  إنشاء كائن 
+         NameClass NameClass = NameClass();
+   
+       Q2_Note1 => The Variable is attribute in class.
+       Q2_Note2 => The Function is method in class.
+}
+
+                     Q2<==========================================>end=>
+ Q3_ What is Constructors =>
+  إنها دالة خاصة تحمل نفس اسم الفئة وتُستخدم لإنشاء كائنات جديدة من نفس نوع الفئة.
+Q3_Steps to create a constructor => {
+    Step 1: إنشاء داله باسم الفئة
+         class NameClass{
+             dataType? attributeName1;
+             dataType? attributeName2;
+             
+             //-constructors-//
+             NameClass(){//code;}
+         } 
+    Step 2: لإضافة سمات إلى المنشئ، هناك طريقتان
+         1- creates new parameters to add their arguments to the attributes=>{
+             NameClass(dataType parameterName1, dataType parameterName2){
+                 attributeName1 = parameterName1;
+                 attributeName2 = parameterName2;
+ 
+                 \note\1:- This way is used when the name of parameter != name of attribute 
+             }
+                         \\----OR----\\
+              NameClass(dataType attributeName1, dataType attributeName2){               
+                 this.attributeName1 = attributeName1;     
+                 this.attributeName2 = attributeName2;     
+ 
+                 \note\2:- This way is used when the name of parameter == name of attribute 
+             }
+ 
+         }   
+         2- uses the attributes as direct parameters to receive their arguments=>{
+             \note\1:- when add code add body\\{}
+             NameClass(this.attributeName1, this.attributeName1){//code}      
+             \\----OR----\\
+              \note\2: when no add code don't add body\\{}
+             NameClass(this.attributeName1, this.attributeName1)
+         }
+    Q3_Note1 => (this) keyword is used to refer to the current object of the class.
+    Q3_Note2 => ({}) These curly braces are used to add code to the body of the constructor and these curly braces are called the body of the constructor.
+}
+                     Q3<==========================================>end=>
+Q4_ What is Encapsulation?=> 
+التغليف هو تجميع البيانات "السمات" والطرق "الوظائف" للتحكم في كيفية الوصول إليها بحيث لا يتم إعطاء قيم غير منطقية أو غير مرغوب فيها، وإخفاء تفاصيل كيفية تنفيذ الوظائف المعقدة "إخفاء التعقيد الداخلي للكائن"، مما يجعل الكود أكثر نمطية وأكثر قابلية للتعديل والصيانة والتطوير
+
+    Q4_Note1 => (_attributeName) When the \attribute is in this form, the \attribute is \private and cannot be accessed outside it is class or the file in which it is referenced.
+    Q4_Note2 => (_methodName) When the \method is in this form, the \method is \private and cannot be accessed outside it is class or the file in which it is referenced.
+    Q4_Note3 => (setter) The setter is a method that is used to set the value of the attribute.
+
+    Steps to create Encapsulation=>{
+        Step 1: إنشاء سمه من نوع الخاص
+             dataType? _attributeName;
+        
+             هي طريقه خاصه بالفئه تتلقى قيمًا خارجية للسمات الخاصة دون إظهار أي تعقيد للكائن و يكون اسمها نفس اسم السمه 
+             Step 2: setter { 
+                    \definition: => 
+                    \note\1: You must add (set) keyword before the attribute Name to make it a setter method
+                    \note\2: when call setter attribute in class Preferred to write (this._attributeName) 
+                    \code : =>{
+                        set attributeName(dataType parameterName){
+                            //*and you can add here any code*//
+                            _attributeName = parameterName;
+                        }
+                    }
+                    \how\use :=> {
+                        1- when use in class => this._attributeName = value;
+                        1- when call by object => objectName.attributeName = value;
+                    }
+            }   
+            Step 3: getter { 
+                    \definition: =>
+ هي طريقه خاصه بالفئه تُستخدم لقراءة واسترجاع القيم فقط للسمه الخاصه دون إظهار تعقيد للكائن ويكون اسمها نفس اسم السمه 
+                    \note\1: You must add (get) keyword before the attribute Name to make it a getter method
+                    \note\2: when call getter attribute in class Preferred to write (this._attributeName) 
+                    \code : =>{
+                        dataType get attributeName => _attributeName
+                    }
+                    \how\use :=> {
+                        1- when use in class => this._attributeName;
+                        1- when call by object => objectName.attributeName;
+                    }
+            }  
+    }
+                     Q3<==========================================>end=>
