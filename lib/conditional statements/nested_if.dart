@@ -1,4 +1,5 @@
 void main() {
+  double x = 10 > 5 ? 6.0 : 5.0;
   /*
   * else if(){}:- This is used to check multiple conditions and execute a block of code if any of the conditions are true : 
   يتم استخدامه للتحقق من شروط متعددة وتنفيذ كتلة من التعليمات البرمجية إذا كانت أي من الشروط صحيحة

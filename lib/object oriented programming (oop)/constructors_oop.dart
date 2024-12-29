@@ -19,6 +19,17 @@ void main() {
     productRate: 4.8,
   );
   print(product1);
+  ProductModel product2 = ProductModel.noDiscount(
+    productId: '65TE9867B',
+    productName: 'Vivo V29',
+    productPrice: 18600,
+    productRate: 4.5,
+  );
+
+  print(product2.productId);
+  print(product2.productName);
+  print(product2.productPrice);
+  print(product2.productRate);
 }
 
 class Persons {
@@ -97,4 +108,11 @@ class ProductModel {
     print('Product Discount Total: $discountTotal');
     print('Product Rate: $productRate');
   }
+
+  ProductModel.noDiscount({
+    required this.productId,
+    required this.productName,
+    required this.productPrice,
+    required this.productRate,
+  });
 }
