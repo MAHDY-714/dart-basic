@@ -1,20 +1,23 @@
 void main() {
-  /*
-  int 
-  double 
-  String
-  bool
+  List<int> cards = [
+    24,
+    21,
+    18,
+    15,
+    12,
+    9,
+    6,
+  ];
+  int askNumber = 22;
 
-  dynamic 
-
-  var
-
-   */
-
-  int x = 10;
-  double y = 10.0;
-  String m = 'hello world';
-  bool l = true;
-  dynamic s = 10;
-  dynamic d;
+  for (int index = 0; index < cards.length; index++) {
+    if (cards[index] == askNumber) {
+      print('the cards numbers = $cards');
+      print('askNumber = $askNumber');
+      print('index = $index');
+      print('the index for ask number ($askNumber) = $index');
+    } else {
+      print(-1);
+    }
+  }
 }

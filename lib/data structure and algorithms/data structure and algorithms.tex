@@ -1,0 +1,113 @@
+Q1_ What is Problem Solving? => {
+    \defined\: =>
+     هي عباره عن أي مشكله معقده نوجد لها حل بخطوات محدده و منظمه الهدف حل المشكله و ترجمة هذا الحلول علي هيئه أكواد برمجيه مع مراعاة كفاءة الأكواد
+} 
+                            Q1============================================end=>
+Q2_ What the Steps of Problem Solving? => {
+                                \/*الخطوات باللغة العربيه*\/
+        1- فهم المشكلة جيداً وتجميع البيانات عنها
+        2- تحديد المدخلات والمخرجات و"حالات الحافة" أي المشكلات المتوقعة وغير المتوقعة
+        3- تحديد مجموعة من الخطوات الواضحة والمنظمة التي تهدف إلى حل المشكلة بطريقة خوارزمية
+        4- تحليل وتقييم كل خطوة وتحديد ما إذا كانت خطوة صحيحة أم لا
+        5- تحديد ما إذا كانت الخطوات التي تم تحديدها هي الأفضل أم لا، إن لم تكن الأفضل نعيد مرحلة تحديد الخطوات للحصول على أفضل كفاءة
+
+                            \/*Steps in English*\/
+        1- Understand the problem and gather data.
+        2- Define inputs, outputs, and "edge cases" (expected and unexpected).
+        3- Develop a clear, structured, algorithmic solution (steps).
+        4- Analyze and validate each step
+        5- Optimize the solution; if needed, refine the steps for better efficiency.
+}
+                            Q2============================================end=>
+Q3_ what is algorithms? =>{
+    \defined\Arabic: => 
+    هي ببساطة مجموعة من الخطوات المحددة والمنظمة لحل مشكلة معينة أو إنجاز مهمة محددة.
+    
+    \defined\English: => 
+    An algorithm is simply a set of well-defined steps to solve a problem or accomplish a specific task. 
+}                           
+                            Q3============================================end=>
+Q4_ What ar types of algorithms? => {
+ \types\in\Arabic: => 
+ 1- خوارزميات التصفية (الاختيار): وهي خوارزميات تقوم بتصعيد أو تقليل عدد الخيارات.
+ 2- خوارزميات التجميع (الجمع): وهي خوارزميات تقوم بجمع البيانات من مصادر متعددة.
+ 3- خوارزميات التكرار (الدوال): وهي خوارزميات تقوم بتحليل البيانات وتكرارها.
+ 4- خوارزميات القص (القطع): وهي خوارزميات تقوم بقطع البيانات وتحليلها.
+ 5- خوارزميات البحث (البحث): وهي خوارزميات تقوم ببحث البيانات وتحليلها.
+ 6- خوارزميات التصنيف (التصنيف): وهي خوارزميات تقوم بتصنيف البيانات وتحليلها.
+ \types\in\English: =>
+ 1- Filtering algorithms (selection): These algorithms increase or decrease the number of options.
+ 2- Aggregation algorithms (aggregation): These algorithms collect data from multiple sources.
+ 3- Recursion algorithms (functions): These algorithms analyze and repeat data.
+ 4- Cutting algorithms (cutting): These algorithms cut data and analyze it.
+ 5- Search algorithms (search): These algorithms search and analyze data.
+ 6- Classification algorithms (classification): These algorithms classify and analyze data.
+}                                                 
+                            Q4============================================end=>
+Q5_ What is types search algorithms? =>{
+     
+    \types\: => {
+        1- Linear Search algorithms: => يتم فيه فحص عناصر القائمة واحدًا تلو الآخر حتى يتم العثور على العنصر المطلوب. 
+        2- Binary Search: => يُستخدم في القوائم المُرتبة. يتم فيه تقسيم القائمة إلى نصفين في كل مرة حتى يتم العثور على العنصر , يتطلب قائمة مُرتّبة.
+    }
+}                            
+                            Q5============================================end=>
+Q6_ How to evaluate the algorithm? =>{
+    \evaluation\: => {
+        Complexity: =>{
+            1- Time complexity: => يُقاس بكمية الوقت الذي يستغرقه تنفيذ الخوارزمية.
+            2- Space complexity: => يُقاس بكمية الذاكرة التي تستخدمها الخوارزمية.
+        }
+        Q6_Note:=> التقيم يعتمد علي نوع المشكلة و نوع البيانات و نوع الخوارزمية و غيرها من العوامل, فقد يكون الأولوية للوقت علي المساحه و العكس و قد يكون هناك توازن بينهم.
+    }
+}                           
+                            Q6============================================end=>
+Q7_ What is the difference between the List and Linked List? =>{                          
+    List{
+        \definition\Arabic: => هي قائمة من العناصر التي يمكن الوصول إليها بواسطة الفهرسة و يمكن إضافة و إزالة العناصر.
+        \definition\English: => A list is a collection of elements that can be accessed by indexing, and elements can be added and removed.
+        \code: => {
+                List<dataType> nameList = [item1, item2, item3, ...];
+                nameList.add(item4);
+                nameList.remove(item2);
+        }
+
+        \Features: => {
+            1- Random access: => يمكن الوصول إلى العناصر بواسطة الفهرسة.
+            2- Fixed size: => يمكن تحديد حجم القائمة.
+            3- Storage in Memory: => يتم تخزين العناصر في الذاكرة بشكل متجاور. 
+            4- Performance when access : => الوصول للعناصر يكون أسرع بسبب وجود فهرسة.
+            5- Performance when add or remove: => إضافة أو إزالة العناصر يكون أبطأ بسبب تحديث الفهرسة.
+        }
+    }
+    Linked List {
+        \definition\Arabic: => هي قائمة من العناصر التي يمكن الوصول إليها بواسطة العنصر السابق و العنصر التالي و يمكن إضافة و إزالة العناصر.
+        \definition\English: => A list of elements that can be accessed by the previous and next element, and elements can be added and removed.
+        \code: =>{
+            \note\1: (node)  تسمي عناصر القائمة المرتبطة.
+            \note\2: (head) هو أول عنصر في القائمة المرتبطة. 
+            \note\3: (tail) هو آخر عنصر في القائمة المرتبطة.
+            \note\4: (address) لكل عنصر في القائمة المرتبطة يوجد عنوان.
+            \note\5: (null) أخر عنصر يشير إلى عدم وجود عنصر تالي. 
+            class Node {
+                dataType data;
+                Node next;
+                Node({required this.data, this.next});
+            }
+            Node head = Node({data: data1, next: null});
+            Node node2 = Node({data: data1, next: null});
+            head.next = node2;
+        }
+        \Features: => {
+            1- Sequential access: => يتم الوصول إلى العناصر بواسطة العنصر السابق و العنصر التالي .
+            2- Dynamic size: => لا يوجد حجم ثابت للقائمة.
+            3- Memory allocation: => يتم تخزين العناصر في الذاكرة بشكل منفصل.
+            4- Performance when access: => الوصول للعناصر يكون أبطأ بسبب عدم وجود فهرسة.
+            5- Performance when add or remove: => إضافة أو إزالة العناصر يكون أسرع بسبب عدم وجود فهرسة.
+        }
+
+        Q7_Note: => يتم تحديد نوع القائمة بناءً على نوع البيانات و نوع العمليات المطلوبة, فإذا كانت العمليات الأساسية هي الإضافة و الحذف يفضل استخدام القوائم المرتبطة و إذا كانت العمليات الأساسية هي الوصول يفضل استخدام القوائم. 
+    }   
+
+}     
+                            Q7============================================end=>
